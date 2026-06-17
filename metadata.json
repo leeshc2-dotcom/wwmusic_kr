@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Music Copyright \u0026 Content Administration Platform",
+  "description": "Premium corporate platform for global music copyright administration, sub-publishing, and content production coordination, designed for international rights holders and independent publishers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

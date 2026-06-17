@@ -1,0 +1,21 @@
+import fs from 'fs';
+import path from 'path';
+
+function fixMilestones(dir: string) {
+  const files = fs.readdirSync(dir);
+  for (const file of files) {
+    const fullPath = path.join(dir, file);
+    if (fs.statSync(fullPath).isDirectory()) {
+      fixMilestones(fullPath);
+    } else if (fullPath.endsWith('.tsx') || fullPath.endsWith('.ts')) {
+      let content = fs.readFileSync(fullPath, 'utf8');
+      content = content.replace(/mileslates/g, 'milestones');
+      content = content.replace(/Mileslate/g, 'Milestone');
+      content = content.replace(/mileslate/g, 'milestone');
+      fs.writeFileSync(fullPath, content);
+      console.log(`Fixed in ${fullPath}`);
+    }
+  }
+}
+
+fixMilestones('./src');
