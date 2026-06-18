@@ -112,7 +112,7 @@ export default function Services() {
                     <IconComponent className="w-5 h-5" />
                   </div>
                   <h3 className="text-xl sm:text-2xl font-sans font-extrabold text-slate-100 tracking-tight">
-                    {activeService.title} 저작권 대리중개 안내
+                    {activeService.title}
                   </h3>
                 </div>
 
