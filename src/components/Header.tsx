@@ -118,13 +118,13 @@ export default function Header() {
               </button>
               <div className="absolute top-full right-0 mt-1 w-32 bg-slate-900 rounded-xl border border-slate-800 shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 overflow-hidden flex flex-col z-50">
                 <a
-                  href="https://example.com/en"
+                  href="https://worldwidemusic-en.netlify.app/"
                   className="px-4 py-3 text-[15px] font-bold text-slate-300 hover:text-emerald-400 border-b border-slate-800 hover:bg-slate-800 transition-colors text-center"
                 >
                   English
                 </a>
                 <a
-                  href="https://example.com/ko"
+                  href="https://worldwidemusic-kr.netlify.app/"
                   className="px-4 py-3 text-[15px] font-bold text-slate-300 hover:text-emerald-400 hover:bg-slate-800 transition-colors text-center"
                 >
                   Korean
@@ -182,14 +182,14 @@ export default function Header() {
               </div>
               <div className="flex flex-col gap-1">
                 <a
-                  href="https://example.com/en"
+                  href="https://worldwidemusic-en.netlify.app/"
                   className="px-4 py-3 rounded-lg text-sm font-medium tracking-wider text-slate-400 hover:text-slate-200 hover:bg-slate-800/50 transition-all flex items-center justify-between"
                 >
                   English
                   <Globe className="w-4 h-4 opacity-50" />
                 </a>
                 <a
-                  href="https://example.com/ko"
+                  href="https://worldwidemusic-kr.netlify.app/"
                   className="px-4 py-3 rounded-lg text-sm font-medium tracking-wider text-emerald-400 bg-slate-800/50 hover:text-emerald-300 transition-all flex items-center justify-between"
                 >
                   Korean
