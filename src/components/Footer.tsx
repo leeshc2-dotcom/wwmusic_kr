@@ -153,16 +153,31 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="http://pimak.org"
+                  href="https://kpia.or.kr/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex flex-col group"
                 >
                   <span className="text-xs text-slate-300 font-bold font-sans group-hover:text-orange-300 transition-colors">
-                    한국대중음악산업협회
+                    한국대중음악산업협회 (KPIA)
                   </span>
                   <span className="text-xs text-slate-500 font-mono mt-0.5 font-medium group-hover:text-slate-400 transition-colors">
-                    pimak.org
+                    kpia.or.kr
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.riak.or.kr/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex flex-col group"
+                >
+                  <span className="text-xs text-slate-300 font-bold font-sans group-hover:text-orange-300 transition-colors">
+                    한국음반산업협회 (RIAK)
+                  </span>
+                  <span className="text-xs text-slate-500 font-mono mt-0.5 font-medium group-hover:text-slate-400 transition-colors">
+                    www.riak.or.kr
                   </span>
                 </a>
               </li>
