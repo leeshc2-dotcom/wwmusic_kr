@@ -125,7 +125,7 @@ export default function Header() {
                   English
                 </a>
                 <a
-                  href="https://worldwidemusic-kr.netlify.app/"
+                  href="https://wwmusic-kr.leeshc2.workers.dev/"
                   target="_self"
                   className="px-4 py-3 text-[15px] font-bold text-slate-300 hover:text-emerald-400 hover:bg-slate-800 transition-colors text-center"
                 >
@@ -192,7 +192,7 @@ export default function Header() {
                   <Globe className="w-4 h-4 opacity-50" />
                 </a>
                 <a
-                  href="https://worldwidemusic-kr.netlify.app/"
+                  href="https://wwmusic-kr.leeshc2.workers.dev/"
                   target="_self"
                   className="px-4 py-3 rounded-lg text-sm font-medium tracking-wider text-emerald-400 bg-slate-800/50 hover:text-emerald-300 transition-all flex items-center justify-between"
                 >
