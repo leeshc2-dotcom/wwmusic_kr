@@ -103,7 +103,7 @@ export default function Header() {
                 id={`nav-${link.id}`}
                 href={link.href}
                 onClick={(e) => handleScrollTo(e, link.id)}
-                className={`px-4 py-2 text-[15px] font-semibold uppercase tracking-widest rounded-lg transition-all duration-200 ${
+                className={`px-4 py-2 text-[14px] font-semibold uppercase tracking-widest rounded-lg transition-all duration-200 ${
                   activeTab === link.id
                     ? "text-orange-300 bg-slate-800/80 border border-slate-700/80"
                     : "text-slate-400 hover:text-slate-200 hover:bg-slate-800/40 border border-transparent"
@@ -115,7 +115,7 @@ export default function Header() {
 
             {/* Language Switcher */}
             <div className="relative group ml-2">
-              <button className="flex items-center gap-1.5 px-3 py-2 text-[15px] font-bold tracking-wide text-emerald-400 hover:text-emerald-300 rounded-lg transition-all duration-200 focus:outline-none">
+              <button className="flex items-center gap-1.5 px-3 py-2 text-[14px] font-bold tracking-wide text-emerald-400 hover:text-emerald-300 rounded-lg transition-all duration-200 focus:outline-none">
                 <Globe className="w-4 h-4" />
                 <span className="capitalize">KOREAN</span>
               </button>
@@ -123,14 +123,14 @@ export default function Header() {
                 <a
                   href="https://wwmusic-test.store/"
                   target="_self"
-                  className="px-4 py-3 text-[15px] font-bold text-slate-300 hover:text-emerald-400 border-b border-slate-800 hover:bg-slate-800 transition-colors text-center"
+                  className="px-4 py-3 text-[14px] font-bold text-slate-300 hover:text-emerald-400 border-b border-slate-800 hover:bg-slate-800 transition-colors text-center"
                 >
                   English
                 </a>
                 <a
                   href="https://kr.wwmusic-test.store/"
                   target="_self"
-                  className="px-4 py-3 text-[15px] font-bold text-slate-300 hover:text-emerald-400 hover:bg-slate-800 transition-colors text-center"
+                  className="px-4 py-3 text-[14px] font-bold text-slate-300 hover:text-emerald-400 hover:bg-slate-800 transition-colors text-center"
                 >
                   Korean
                 </a>
@@ -172,7 +172,7 @@ export default function Header() {
                 id={`mobile-nav-${link.id}`}
                 href={link.href}
                 onClick={(e) => handleScrollTo(e, link.id)}
-                className={`px-4 py-3 rounded-lg text-[15px] font-medium uppercase tracking-wider transition-all ${
+                className={`px-4 py-3 rounded-lg text-[14px] font-medium uppercase tracking-wider transition-all ${
                   activeTab === link.id
                     ? "text-orange-300 bg-slate-800 border border-slate-700"
                     : "text-slate-400 hover:text-slate-200 hover:bg-slate-800/50"

@@ -99,7 +99,7 @@ export default function Hero() {
           transition={{ duration: 0.9, delay: 0.6 }}
           className="mt-20 border-t border-slate-800/60 pt-10 w-full"
         >
-          <p className="text-xs font-mono uppercase tracking-[0.2em] text-slate-500 font-semibold mb-6">
+          <p className="text-sm font-mono uppercase tracking-[0.2em] text-slate-500 font-semibold mb-6">
             창작자의 진정한 가치를 지켜내는 따뜻하고 투명한 관리
           </p>
           <div className="mt-6 flex flex-wrap items-center justify-center gap-4 opacity-80 hover:opacity-100 transition-all duration-300">

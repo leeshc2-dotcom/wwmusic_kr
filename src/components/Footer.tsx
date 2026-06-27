@@ -48,7 +48,7 @@ export default function Footer() {
               </span>
             </div>
 
-            <p className="text-slate-400 text-xs leading-relaxed max-w-sm">
+            <p className="text-slate-400 text-[14px] leading-relaxed max-w-sm">
               투명하고 효율적인 저작권 대리중개 서비스를 바탕으로, 국내외
               권리자의 가치를 극대화하고 신뢰도 높은 권리 보호와 행정 솔루션을
               전문적으로 제공합니다.
