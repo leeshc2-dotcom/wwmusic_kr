@@ -82,11 +82,11 @@ export default function Header() {
               <LogoIcon className="w-8 h-8" />
               <div className="absolute inset-0 rounded-lg bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </div>
-            <div>
-              <span className="font-sans font-extrabold text-[1.375rem] tracking-tight bg-gradient-to-r from-slate-100 via-slate-200 to-slate-300 bg-clip-text text-transparent">
+            <div className="flex flex-col justify-center">
+              <span className="font-sans font-extrabold text-[1.375rem] leading-none tracking-tight bg-gradient-to-r from-slate-100 via-slate-200 to-slate-300 bg-clip-text text-transparent mb-1">
                 WorldWide
               </span>
-              <span className="hidden sm:block font-mono text-xs uppercase tracking-[0.25em] text-orange-400 font-bold">
+              <span className="hidden sm:block font-mono text-xs leading-none uppercase tracking-[0.25em] text-orange-400 font-bold pl-0.5">
                 MUSIC GROUP
               </span>
             </div>
