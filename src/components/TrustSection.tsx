@@ -8,12 +8,6 @@ import { motion } from "motion/react";
 import { trustPillars } from "../data";
 import { ShieldCheck, Zap, Languages, Check, ArrowRight } from "lucide-react";
 
-const iconMap: Record<string, React.ComponentType<any>> = {
-  ShieldCheck: ShieldCheck,
-  Zap: Zap,
-  Languages: Languages,
-};
-
 export default function TrustSection() {
   return (
     <section
@@ -41,18 +35,18 @@ export default function TrustSection() {
               없도록 투박하지만 정직한 정도(正道)를 고집하며 따스한 울타리가
               되어 드립니다.
             </p>
-            <p className="mt-4 text-slate-400 text-xs leading-relaxed font-sans break-keep">
+            <p className="mt-4 text-slate-400 text-sm leading-relaxed font-sans break-keep">
               누군가 당신의 소중한 노력을 무단으로 사용하거나 훼손하려 할 때
               단호하게 대응하며, 그 복잡한 숫자 이면에 흘린 당신의 땀방울을
               알기에 가장 정직하고 확실한 데이터로 믿음직한 안식처를 선사합니다.
             </p>
 
             <div className="mt-6 border-t border-slate-800/80 pt-5">
-              <div className="flex items-center gap-2 text-slate-300 text-xs font-semibold uppercase tracking-wider">
+              <div className="flex items-center gap-2 text-slate-300 text-sm font-semibold tracking-wider">
                 <Check className="w-4 h-4 text-amber-500" />
                 창작자 권익 최우선의 투명한 상생 원칙
               </div>
-              <div className="flex items-center gap-2 text-slate-300 text-xs font-semibold uppercase tracking-wider mt-2">
+              <div className="flex items-center gap-2 text-slate-300 text-sm font-semibold tracking-wider mt-2">
                 <Check className="w-4 h-4 text-amber-500" />
                 침해 제로를 향한 철저하고 빈틈없는 방어
               </div>
@@ -61,7 +55,6 @@ export default function TrustSection() {
 
           <div className="lg:col-span-8 flex flex-col gap-6">
             {trustPillars.map((pillar, idx) => {
-              const PillarIcon = iconMap[pillar.icon] || ShieldCheck;
               return (
                 <motion.div
                   key={pillar.title}
@@ -70,28 +63,23 @@ export default function TrustSection() {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true, margin: "-100px" }}
                   transition={{ duration: 0.5, delay: idx * 0.1 }}
-                  className="bg-slate-900 border border-slate-800 hover:border-slate-700/80 p-8 rounded-2xl flex flex-col sm:flex-row justify-between items-start sm:items-center gap-8 transition-all duration-300 group hover:shadow-xl hover:shadow-amber-500/5 text-slate-300"
+                  className="bg-slate-900 border border-slate-800 hover:border-slate-700/80 p-6 sm:p-7 rounded-2xl flex flex-col xl:flex-row justify-between items-start xl:items-center gap-6 transition-all duration-300 group hover:shadow-xl hover:shadow-amber-500/5 text-slate-300"
                 >
-                  <div className="flex items-start gap-5 max-w-xl">
-                    <div className="w-12 h-12 bg-slate-950 border border-slate-800 rounded-xl flex items-center justify-center text-amber-500 group-hover:bg-amber-500 group-hover:text-slate-950 transition-all duration-300 shrink-0">
-                      <PillarIcon className="w-5 h-5" />
-                    </div>
-                    <div>
-                      <h3 className="font-sans font-extrabold text-base text-slate-100 tracking-tight">
-                        {pillar.title}
-                      </h3>
-                      <p className="mt-2 font-sans text-xs text-slate-400 leading-relaxed">
-                        {pillar.description}
-                      </p>
-                    </div>
+                  <div className="flex flex-col max-w-2xl">
+                    <h3 className="font-sans font-extrabold text-base sm:text-lg text-slate-100 tracking-tight">
+                      {pillar.title}
+                    </h3>
+                    <p className="mt-2.5 font-sans text-sm text-slate-400 leading-relaxed break-keep">
+                      {pillar.description}
+                    </p>
                   </div>
 
                   {pillar.metric && (
-                    <div className="border-l border-slate-800/80 pl-6 sm:border-l-2 sm:border-slate-800/60 w-full sm:w-auto text-left shrink-0">
-                      <div className="font-sans font-black text-2xl sm:text-3xl text-amber-400 tracking-tight">
+                    <div className="border-l-2 border-amber-500/30 pl-4 sm:pl-6 w-full xl:w-auto text-left shrink-0 mt-4 xl:mt-0 flex flex-col gap-1.5">
+                      <div className="font-sans font-black text-xl sm:text-2xl text-amber-400 tracking-tight whitespace-nowrap">
                         {pillar.metric}
                       </div>
-                      <div className="text-xs font-mono uppercase tracking-wider text-slate-500 font-semibold mt-0.5 max-w-[120px] sm:max-w-none">
+                      <div className="text-[13px] sm:text-sm font-sans text-slate-400 font-semibold break-keep whitespace-nowrap">
                         {pillar.metricLabel}
                       </div>
                     </div>
