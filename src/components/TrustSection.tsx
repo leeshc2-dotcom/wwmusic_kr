@@ -20,7 +20,7 @@ export default function TrustSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Layout: Two columns - Left is statement, Right is pillars */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
-          <div className="lg:col-span-4 flex flex-col pt-2 lg:pt-8">
+          <div className="lg:col-span-4 flex flex-col pt-2 lg:-mt-4">
             <h2 className="text-xs font-mono uppercase tracking-[0.25em] text-amber-500 font-bold mb-4">
               운영 전략 (Operational Strategy)
             </h2>
@@ -53,7 +53,7 @@ export default function TrustSection() {
             </div>
           </div>
 
-          <div className="lg:col-span-8 flex flex-col gap-6">
+          <div className="lg:col-span-8 flex flex-col gap-4">
             {trustPillars.map((pillar, idx) => {
               return (
                 <motion.div
@@ -63,23 +63,23 @@ export default function TrustSection() {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true, margin: "-100px" }}
                   transition={{ duration: 0.5, delay: idx * 0.1 }}
-                  className="bg-slate-900 border border-slate-800 hover:border-slate-700/80 p-6 sm:p-7 rounded-2xl flex flex-col xl:flex-row justify-between items-start xl:items-center gap-6 transition-all duration-300 group hover:shadow-xl hover:shadow-amber-500/5 text-slate-300"
+                  className="bg-slate-900 border border-slate-800 hover:border-slate-700/80 p-4 sm:p-5 rounded-2xl flex flex-col xl:flex-row justify-between items-start xl:items-center gap-4 transition-all duration-300 group hover:shadow-xl hover:shadow-amber-500/5 text-slate-300"
                 >
-                  <div className="flex flex-col max-w-2xl">
-                    <h3 className="font-sans font-extrabold text-base sm:text-lg text-slate-100 tracking-tight">
+                  <div className="flex flex-col flex-1 pr-0 xl:pr-6">
+                    <h3 className="font-sans font-extrabold text-[14px] sm:text-[15px] text-slate-100 tracking-tight">
                       {pillar.title}
                     </h3>
-                    <p className="mt-2.5 font-sans text-sm text-slate-400 leading-relaxed break-keep">
+                    <p className="mt-1.5 font-sans text-[12px] sm:text-[13px] text-slate-400 leading-relaxed break-keep">
                       {pillar.description}
                     </p>
                   </div>
 
                   {pillar.metric && (
-                    <div className="border-l-2 border-amber-500/30 pl-4 sm:pl-6 w-full xl:w-[320px] text-left shrink-0 mt-4 xl:mt-0 flex flex-col gap-1.5">
-                      <div className="font-sans font-black text-xl sm:text-2xl text-amber-400 tracking-tight whitespace-nowrap">
+                    <div className="border-l-2 border-amber-500/30 pl-4 sm:pl-5 w-full xl:w-[320px] text-left shrink-0 mt-2 xl:mt-0 flex flex-col gap-1">
+                      <div className="font-sans font-black text-2xl sm:text-3xl text-amber-400 tracking-tight whitespace-nowrap">
                         {pillar.metric}
                       </div>
-                      <div className="text-[13px] sm:text-sm font-sans text-slate-400 font-semibold break-keep whitespace-nowrap">
+                      <div className="text-[12px] sm:text-[13px] font-sans text-slate-400 font-semibold break-keep whitespace-nowrap">
                         {pillar.metricLabel}
                       </div>
                     </div>
