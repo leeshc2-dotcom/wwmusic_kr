@@ -94,7 +94,7 @@ export default function Contact() {
                   커뮤니케이션 담당
                 </h4>
                 <p className="mt-1 font-sans text-sm text-slate-200 font-semibold tracking-wide">
-                  leeshc0@naver.com
+                  wwmgpublishing@gmail.com
                 </p>
               </div>
             </div>

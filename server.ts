@@ -26,7 +26,7 @@ async function startServer() {
 
       const mailOptions = {
         from: 'leeshc0@naver.com',
-        to: 'leeshc0@naver.com',
+        to: 'wwmgpublishing@gmail.com',
         subject: `[문의] ${subject} - ${name}`,
         text: `보내는 사람 (이름/회사명): ${name}\n회신받을 이메일: ${email}\n\n문의 내용:\n${message}`,
         replyTo: email,
