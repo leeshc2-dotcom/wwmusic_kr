@@ -94,7 +94,7 @@ export default function Contact() {
                   커뮤니케이션 담당
                 </h4>
                 <p className="mt-1 font-sans text-sm text-slate-200 font-semibold tracking-wide">
-                  wwmgpublishing@gmail.com
+                  Jude.lee@wwmg.co.kr
                 </p>
               </div>
             </div>
