@@ -15,17 +15,17 @@ async function startServer() {
       const { name, email, subject, message } = req.body;
       
       const transporter = nodemailer.createTransport({
-        host: 'smtp.naver.com',
+        host: 'smtp.daum.net',
         port: 465,
         secure: true,
         auth: {
-          user: 'leeshc0@naver.com',
-          pass: '3P8B73TZMX6L'
+          user: process.env.SMTP_USER || 'Jude.lee@wwmg.co.kr',
+          pass: process.env.SMTP_PASS || 'rjfjqmnowgnwcpgw'
         }
       });
 
       const mailOptions = {
-        from: 'leeshc0@naver.com',
+        from: process.env.SMTP_USER || 'Jude.lee@wwmg.co.kr',
         to: 'Jude.lee@wwmg.co.kr',
         subject: `[문의] ${subject} - ${name}`,
         text: `보내는 사람 (이름/회사명): ${name}\n회신받을 이메일: ${email}\n\n문의 내용:\n${message}`,
