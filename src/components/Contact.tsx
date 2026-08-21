@@ -30,12 +30,16 @@ export default function Contact() {
     setStatus("loading");
     
     try {
-      const response = await fetch("/api/send-email", {
+      const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
+          "Accept": "application/json"
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          access_key: "fa52ff4a-6ba9-4f81-b5aa-d98537db77e5",
+          ...formData
+        }),
       });
 
       if (response.ok) {
@@ -94,7 +98,7 @@ export default function Contact() {
                   커뮤니케이션 담당
                 </h4>
                 <p className="mt-1 font-sans text-sm text-slate-200 font-semibold tracking-wide">
-                  Jude.lee@wwmg.co.kr
+                  jude.lee@wwmg.co.kr
                 </p>
               </div>
             </div>

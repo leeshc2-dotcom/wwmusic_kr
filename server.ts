@@ -10,34 +10,8 @@ async function startServer() {
   app.use(express.json());
 
   // API routes FIRST
-  app.post("/api/send-email", async (req, res) => {
-    try {
-      const { name, email, subject, message } = req.body;
-      
-      const transporter = nodemailer.createTransport({
-        host: 'smtp.gmail.com',
-        port: 465,
-        secure: true,
-        auth: {
-          user: process.env.SMTP_USER || 'leeshc2@gmail.com',
-          pass: process.env.SMTP_PASS || 'pbmtwicobufslmdx'
-        }
-      });
-
-      const mailOptions = {
-        from: `"${name}" <Jude.lee@wwmg.co.kr>`,
-        to: 'Jude.lee@wwmg.co.kr',
-        subject: `[문의] ${subject} - ${name}`,
-        text: `보내는 사람 (이름/회사명): ${name}\n회신받을 이메일: ${email}\n\n문의 내용:\n${message}`,
-        replyTo: email,
-      };
-
-      await transporter.sendMail(mailOptions);
-      res.status(200).json({ success: true });
-    } catch (error: any) {
-      console.error('Email send error:', error);
-      res.status(500).json({ success: false, error: 'Failed to send email', details: error.message });
-    }
+  app.get("/api/health", (req, res) => {
+    res.json({ status: "ok" });
   });
 
   // Vite middleware for development
